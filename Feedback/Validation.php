@@ -11,7 +11,7 @@ class Validation
     }
     public static function email($field)
     {
-        return true;
+        return (strpos($field, '@')) ? true : false;
     }
     public static function not_null($field)
     {
