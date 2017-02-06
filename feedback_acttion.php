@@ -1,5 +1,5 @@
 <?
-include 'Feedback\DataBase.php';
-use Feedback\DataBase as DB;
+require 'Feedback\Message.php';
+use Feedback\Message as Mes;
 
-DB::download_message($_POST['name'], $_POST['email'], $_POST['message']);
+$mes = new Mes($_POST);

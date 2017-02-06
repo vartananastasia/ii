@@ -4,10 +4,13 @@
     <meta charset="utf-8" />
 </head>
 <body>
+
 <form name="feedback" method="post" action="feedback_acttion.php">
-<input type="text" name="name" value="имя">
-<input type="text" name="email" value="email@email.ru">
-<input type="text" name="message" value="сообщение">
+    <?
+    include('Feedback\FormCreate.php');
+    use Feedback\FormCreate as FCreate;
+    echo FCreate::create();
+    ?>
     <input type="submit" value="Отправить">
 </form>
 </body>
