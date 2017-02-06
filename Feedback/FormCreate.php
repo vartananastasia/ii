@@ -1,17 +1,16 @@
 <?
 namespace Feedback;
 
-include('Feedback\DataBaseExecute.php');
-use Feedback\DataBaseExecute as DB;
+include('Feedback\ConstructQuery.php');
+use Feedback\ConstructQuery as CQ;
 include('form-vau/settings.php');
 
 class FormCreate
 {
     public static function create()
     {
-        $db_execution = new DB();
-        $query = 'show columns from '.$GLOBALS['db_table'].';';
-        $fields = $db_execution->execute($query);
+        $db_execution = new CQ();
+        $fields = $db_execution->execute(CQ::showColumns($GLOBALS['db_table']));
         while ($row = $fields->fetch())
         {
             $data[$row['Field']] = $row['Type'];

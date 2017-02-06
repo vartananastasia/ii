@@ -17,4 +17,10 @@ class ConstructQuery extends DB
         $query = 'INSERT INTO message(  ID '.$in_to.')VALUES(0'.$what.');';
         return $query;
     }
+
+    public static function showColumns($table)
+    {
+        $query = 'show columns from '.$table.';';
+        return $query;
+    }
 }
