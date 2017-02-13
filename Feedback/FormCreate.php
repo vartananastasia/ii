@@ -7,7 +7,16 @@ include('form-vau/settings.php');
 
 class FormCreate
 {
-    public static function create()
+    private $fields = [];
+    public $html = '';
+
+    public function __construct()
+    {
+        $this->fields = self::getFields();
+        $this->html = self::constructForm($this->fields);
+    }
+
+    private static function getFields()
     {
         $db_execution = new CQ();
         $fields = $db_execution->execute(CQ::showColumns($GLOBALS['db_table']));
@@ -15,7 +24,7 @@ class FormCreate
         {
             $data[$row['Field']] = $row['Type'];
         }
-        return self::constructForm($data);
+        return $data;
     }
 
     private static function constructForm($data)

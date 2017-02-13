@@ -9,7 +9,8 @@
     <?
     include('Feedback\FormCreate.php');
     use Feedback\FormCreate as FCreate;
-    echo FCreate::create();
+    $form = new FCreate();
+    echo $form->html;
     ?>
     <input type="submit" value="Отправить">
 </form>
