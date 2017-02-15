@@ -17,6 +17,9 @@ class ChooseForm
                $data[] = $row[0];
            }
        }
-       return $data;
+       foreach ($data as $item){
+           echo '<a href="form.php?form='.$item.'">'.$item.'</a><br>';
+       }
+       return true;
    }
 }
