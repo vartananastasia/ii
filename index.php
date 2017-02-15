@@ -5,14 +5,13 @@
 </head>
 <body>
 
-<form name="feedback" method="post" action="feedback_acttion.php">
     <?
-    include('Feedback\FormCreate.php');
-    use Feedback\FormCreate as FCreate;
-    $form = new FCreate();
-    echo $form->html;
+    include('Feedback\Form\ChooseForm.php');
+    use Feedback\ChooseForm as FChoose;
+    $form = FChoose::allForms();
+    foreach ($form as $item){
+        echo '<a href="form.php?form='.$item.'">'.$item.'</a><br>';
+    }
     ?>
-    <input type="submit" value="Отправить">
-</form>
 </body>
 </html>

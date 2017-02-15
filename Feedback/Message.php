@@ -1,15 +1,22 @@
 <?
 namespace Feedback;
 
-include('Feedback\ConstructQuery.php');
 use Feedback\ConstructQuery as CQ;
 
 class Message
 {
-    public function __construct($fields, $valid)
+    private $fields = [];
+
+    public function __construct($fields,Form $form)
     {
+        echo '<pre>';
+        $this->fields = $fields;
+        print_r($this->fields);
+        $valid = $form->getInputValidation();
+        echo '</pre>';
         $download = true;
-        foreach ($fields as $key => $field) {
+
+        foreach ($this->fields as $key => $field) {
             if (count($valid[$key])>0) {
                 $write = true;
                 foreach ($valid[$key] as $validation) {
@@ -25,16 +32,18 @@ class Message
             }
         }
         if ($download) {
-            $this->download_message($fields);
+            $table = 'form_'.$form->getName();
+            $this->download_message($fields, $table);
         }else{
             echo 'Несоответствие данных';
         }
     }
 
-    private function download_message($fields)
+    private function download_message($fields, $table)
     {
         $db_execution = new CQ();
-        $mess = $db_execution->execute(CQ::insert($fields, $GLOBALS['db_table']));
+        $mess = $db_execution->execute(CQ::insert($fields, $table));
+        echo CQ::insert($fields, $table);
         return $mess;
     }
 }

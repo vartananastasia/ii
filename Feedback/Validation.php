@@ -17,7 +17,7 @@ class Validation
     {
         return ($field) ? true : false;
     }
-    private static function valid_types(){
+    public static function valid_types(){
         $db_execution = new CQ();
         $fields = $db_execution->execute(CQ::select($GLOBALS['db_valid_type']));
         while ($row = $fields->fetch())
@@ -26,10 +26,10 @@ class Validation
         }
         return $data;
     }
-    public static function column_valid(){
-        $types = self::valid_types();
+    public static function column_valid($table){
+        $types = self::valid_types($table);
         $db_execution = new CQ();
-        $fields = $db_execution->execute(CQ::select($GLOBALS['db_validation']));
+        $fields = $db_execution->execute(CQ::where(CQ::select($GLOBALS['db_validation']), 'table_id', $table));
         while ($row = $fields->fetch())
         {
             $data[$row['column']][] = $types[$row['valid_type']];

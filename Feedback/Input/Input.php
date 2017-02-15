@@ -1,24 +1,24 @@
 <?
 namespace Feedback;
 
-include('Feedback\ConstructQuery.php');
 use Feedback\ConstructQuery as CQ;
 include('form-vau/settings.php');
 
 class Input
 {
     private $name;
+    private $title;
     private $form;
     private $type;
     private $validation = [];
     private $html;
 
-    public function __construct()
+    public function __construct($name, $form, $type, $validation)
     {
-        $this->name = 'Имя';
-        $this->form = 'feedback';
-        $this->type = 'text';
-        $this->validation = ['not_null'];
+        $this->name = $name;
+        $this->form = $form;
+        $this->type = $type;
+        $this->validation = $validation;
 
         switch ($this->type){
             case 'textarea':
@@ -54,6 +54,17 @@ class Input
                 return $this->html;
                 break;
         }
+    }
+
+    public static function input_types(){
+
+        $db_execution = new CQ();
+        $fields = $db_execution->execute(CQ::select($GLOBALS['db_input_types']));
+        while ($row = $fields->fetch())
+        {
+            $data[$row['ID']] = $row['type'];
+        }
+        return $data;
     }
 
     private function htmlTextarea($name){

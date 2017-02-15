@@ -29,4 +29,23 @@ class ConstructQuery extends DB
         $query = 'select * from '.$table.';';
         return $query;
     }
+
+    public static function showTables()
+    {
+        $query = 'show tables;';
+        return $query;
+    }
+
+    public static function where($query, $field, $value)
+    {
+        $query = str_replace(';', '', $query);
+        $j = explode('_', $field);
+        $field_spec = end($j);
+        if ($field_spec == 'id'){
+            $query = $query . ' where ' . $field . '=' . $value;
+        }else {
+            $query = $query . ' where ' . $field . '="' . $value . '"';
+        }
+        return $query.';';
+    }
 }
