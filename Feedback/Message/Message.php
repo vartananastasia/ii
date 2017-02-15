@@ -9,11 +9,8 @@ class Message
 
     public function __construct($fields,Form $form)
     {
-        echo '<pre>';
         $this->fields = $fields;
-        print_r($this->fields);
         $valid = $form->getInputValidation();
-        echo '</pre>';
         $download = true;
 
         foreach ($this->fields as $key => $field) {
@@ -43,7 +40,6 @@ class Message
     {
         $db_execution = new CQ();
         $mess = $db_execution->execute(CQ::insert($fields, $table));
-        echo CQ::insert($fields, $table);
         return $mess;
     }
 }

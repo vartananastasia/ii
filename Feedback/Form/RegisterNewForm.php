@@ -1,7 +1,7 @@
 <?
 namespace Feedback;
 
-include('Feedback\ConstructQuery.php');
+include('Feedback\DB\ConstructQuery.php');
 use Feedback\ConstructQuery as CQ;
 include('form-vau/settings.php');
 

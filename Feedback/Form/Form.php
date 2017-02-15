@@ -2,8 +2,8 @@
 namespace Feedback;
 
 include('form-vau/settings.php');
-include('Feedback\ConstructQuery.php');
-include('Feedback\Validation.php');
+include('Feedback\DB\ConstructQuery.php');
+include('Feedback\Message\Validation.php');
 include('Feedback\Input\Input.php');
 use Feedback\ConstructQuery as CQ;
 use Feedback\Validation as Valid;

@@ -1,5 +1,5 @@
 <?
-require 'Feedback\Message.php';
+require 'Feedback\Message\Message.php';
 include('Feedback\Form\Form.php');
 use Feedback\Message as Mes;
 
