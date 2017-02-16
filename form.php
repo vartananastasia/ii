@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<form name="feedback" method="post" action="feedback_action.php?form=<?=$_GET['form']?>">
+<form name="<?=$_GET['form']?>" method="post" action="feedback_action.php?form=<?=$_GET['form']?>">
     <?
     include('Feedback\Form\Form.php');
     $form = new Feedback\Form($_GET['form']);

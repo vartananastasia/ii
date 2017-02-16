@@ -20,6 +20,10 @@ class ChooseForm
        foreach ($data as $item){
            echo '<a href="form.php?form='.$item.'">'.$item.'</a><br>';
        }
+
+       $db_execution = new CQ();
+       $fields = $db_execution->execute(CQ::CreateTable('newtable'));
+
        return true;
    }
 }

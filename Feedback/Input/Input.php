@@ -67,17 +67,17 @@ class Input
         return $data;
     }
 
-    private function htmlTextarea($name){
+    private static function htmlTextarea($name){
         return "<textarea name='{$name}'></textarea>";
     }
 
-    private function htmlText($name){
+    private static function htmlText($name){
         return "<input type='text' name='{$name}'>";
     }
 
-    private function htmlCheckbox(){
+    private static function htmlCheckbox(){
     }
 
-    private function htmlRadio(){
+    private static function htmlRadio(){
     }
 }
