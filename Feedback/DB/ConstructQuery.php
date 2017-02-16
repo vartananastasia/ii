@@ -48,4 +48,14 @@ class ConstructQuery extends DB
         }
         return $query.';';
     }
+
+    public static function CreateTable($form_name, $form_fields)
+    {
+        $fields = '';
+        foreach ($form_fields as $key =>$field){
+            $fields .= $field.' varchar(255) DEFAULT NULL,';
+        }
+        $query = "CREATE TABLE feedback.form_" . $form_name . " (  ID int(11) NOT NULL AUTO_INCREMENT,  ". $fields ."  PRIMARY KEY (ID));";
+        return $query;
+    }
 }
