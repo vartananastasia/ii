@@ -42,7 +42,15 @@ Class Template implements ArrayAccess
         foreach ($this->vars as $key=>$field){
             $temp = str_replace('{{ '.$key.' }}', $field, $temp);
         }
-        echo $temp;
+
+        $pattern = "/{{ include (\w+).(\w+) }}/i";
+        preg_match_all($pattern, $temp, $files);
+
+        foreach ($files[1] as $key=>$file){
+            $temp = str_replace('{{ include '.$file.'.'.$files[2][$key].' }}', file_get_contents('templates/'.$file.'.'.$files[2][$key]), $temp);
+        }
+
+          echo $temp;
     }
 
     function offsetExists($offset)
