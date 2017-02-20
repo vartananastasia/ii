@@ -1,8 +1,7 @@
 <?
-namespace Feedback;
+namespace Feedback\DB;
 
-include('Feedback\DB\DataBaseExecute.php');
-use Feedback\DataBaseExecute as DB;
+use Feedback\DB\DataBaseExecute as DB;
 
 class ConstructQuery extends DB
 {

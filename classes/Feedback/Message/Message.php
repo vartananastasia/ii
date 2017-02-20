@@ -1,11 +1,13 @@
 <?
-namespace Feedback;
+namespace Feedback\Message;
 
-use Feedback\ConstructQuery as CQ;
+use Feedback\DB\ConstructQuery as CQ;
+use Feedback\Form\Form as Form;
 
 class Message
 {
     private $fields = [];
+    private $send;
 
     public function __construct($fields,Form $form)
     {
@@ -31,8 +33,9 @@ class Message
         if ($download) {
             $table = 'form_'.$form->getName();
             $this->download_message($fields, $table);
+            $this->send = "Сообщение успешно отправлено";
         }else{
-            echo 'Несоответствие данных';
+            $this->send = 'Несоответствие данных';
         }
     }
 
@@ -41,5 +44,9 @@ class Message
         $db_execution = new CQ();
         $mess = $db_execution->execute(CQ::insert($fields, $table));
         return $mess;
+    }
+
+    public function getStatus(){
+        return $this->send;
     }
 }

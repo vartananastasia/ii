@@ -1,7 +1,5 @@
 <?
-namespace Feedback;
-
-include 'form-vau/settings.php';
+namespace Feedback\DB;
 
 class DataBaseExecute
 {
@@ -9,7 +7,7 @@ class DataBaseExecute
 
     public function __construct()
     {
-        $this->connect = new \PDO('mysql:host='.$GLOBALS['db_host'].';dbname='.$GLOBALS['db_name'], $GLOBALS['db_user'], $GLOBALS['db_password']);
+        $this->connect = new \PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASSWORD);
     }
 
     public function execute($query)

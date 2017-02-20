@@ -1,8 +1,7 @@
 <?
-namespace Feedback;
+namespace Feedback\Input;
 
-use Feedback\ConstructQuery as CQ;
-include('form-vau/settings.php');
+use Feedback\DB\ConstructQuery as CQ;
 
 class Input
 {
@@ -59,7 +58,7 @@ class Input
     public static function input_types(){
 
         $db_execution = new CQ();
-        $fields = $db_execution->execute(CQ::select($GLOBALS['db_input_types']));
+        $fields = $db_execution->execute(CQ::select(DB_INPUT_TYPES));
         while ($row = $fields->fetch())
         {
             $data[$row['ID']] = $row['type'];

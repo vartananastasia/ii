@@ -1,14 +1,13 @@
 <?
-namespace Feedback;
+namespace Feedback\Form;
 
-include('Feedback\DB\ConstructQuery.php');
-use Feedback\ConstructQuery as CQ;
-include('form-vau/settings.php');
+use Feedback\DB\ConstructQuery as CQ;
 
 class ChooseForm
 {
    public static function allForms(){
 
+       $form = '';
        $db_execution = new CQ();
        $fields = $db_execution->execute(CQ::showTables());
        while ($row = $fields->fetch())
@@ -18,9 +17,9 @@ class ChooseForm
            }
        }
        foreach ($data as $item){
-           echo '<a href="form.php?form='.$item.'">'.$item.'</a><br>';
+           $form .= '<a href="index.php?route=form/form&form='.$item.'">'.$item.'</a><br>';
        }
 
-       return true;
+       return $form;
    }
 }

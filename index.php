@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="ru-RU">
-<head>
-    <meta charset="utf-8" />
-</head>
-<body>
+<?php
+include 'form-vau/start.php';
 
-    <?
-    include('Feedback\Form\ChooseForm.php');
-    use Feedback\ChooseForm as FChoose;
-    FChoose::allForms();
-    ?>
-</body>
-</html>
+use Feedback\DB\DataBaseExecute as DB;
+
+$registry->set ('db', new DB());
+$registry->set ('template', new Template($registry));
+$registry->set ('router', new Router($registry));
+
+$registry['router']->setPath (site_path . 'controllers');
+
+$registry['router']->delegate();

@@ -1,12 +1,9 @@
 <?
-namespace Feedback;
+namespace Feedback\Form;
 
-include('form-vau/settings.php');
-include('Feedback\DB\ConstructQuery.php');
-include('Feedback\Message\Validation.php');
-include('Feedback\Input\Input.php');
-use Feedback\ConstructQuery as CQ;
-use Feedback\Validation as Valid;
+use Feedback\Input\Input as Input;
+use Feedback\DB\ConstructQuery as CQ;
+use Feedback\Message\Validation as Valid;
 
 class Form
 {
@@ -29,13 +26,13 @@ class Form
         $forms = self::forms();
 
         $db_execution = new CQ();
-        $fields = $db_execution->execute(CQ::where(CQ::select($GLOBALS['db_inputs']), 'form_id', $forms[$this->name]));
+        $fields = $db_execution->execute(CQ::where(CQ::select(DB_INPUTS), 'form_id', $forms[$this->name]));
 
         while ($row = $fields->fetch())
         {
 
             $db_execution = new CQ();
-            $f = $db_execution->execute(CQ::where(CQ::select($GLOBALS['db_input_validation']), 'input_id', $row['ID']));
+            $f = $db_execution->execute(CQ::where(CQ::select(DB_INPUT_VALIDATION), 'input_id', $row['ID']));
             while ($r = $f->fetch())
             {
                $validation[$row['ID']][] = $valid_types[$r['valid_type_id']];
@@ -58,7 +55,7 @@ class Form
 
     public function getHtml()
     {
-        echo $this->html;
+        return $this->html;
     }
 
     public function getName()
@@ -69,7 +66,7 @@ class Form
     private static function forms()
     {
         $db_execution = new CQ();
-        $fields = $db_execution->execute(CQ::select($GLOBALS['db_forms']));
+        $fields = $db_execution->execute(CQ::select(DB_FORMS));
 
         while ($row = $fields->fetch())
         {
