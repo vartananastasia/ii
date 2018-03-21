@@ -1,10 +1,10 @@
 <?php
 
-use Feedback\Form\ChooseForm as FChoose;
-use Feedback\Form\Form as Form;
+use BaseClasses\Form\ChooseForm as FChoose;
+use BaseClasses\Form\Form as Form;
 use Registry as Reg;
 use Template as Temp;
-use Feedback\Message\Message as Mes;
+use BaseClasses\Message\Message as Mes;
 
 
 Class Controller_Form Extends Controller_Base
@@ -17,7 +17,7 @@ Class Controller_Form Extends Controller_Base
     function choose()
     {
         $template = new Temp(new Reg);
-        $template->set('choose', FChoose::allForms());
+//        $template->set('choose', FChoose::allForms());
 
         $template->show('templates/choose.html');
     }

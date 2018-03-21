@@ -1,12 +1,15 @@
 <?php
-include 'form-vau/start.php';
+include 'base/start.php';
 
-use Feedback\DB\DataBaseExecute as DB;
-
-$registry->set ('db', new DB());
+use BaseClasses\DB\DataBaseExecute as DB;
 $registry->set ('template', new Template($registry));
 $registry->set ('router', new Router($registry));
-
-$registry['router']->setPath (site_path . 'controllers');
+try {
+    $registry['router']->setPath(site_path . 'controllers');
+}catch (Exception $e){
+    echo $e->getMessage();
+}
 
 $registry['router']->delegate();
+
+$registry->set ('db', new DB());

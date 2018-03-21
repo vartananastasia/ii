@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /
+Sitemap: http://s.we-meet.ru/sitemap.xml
+Host: s.we-meet.ru
