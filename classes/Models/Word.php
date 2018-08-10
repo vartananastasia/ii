@@ -6,12 +6,12 @@
  * Time: 11:25
  */
 
-class User extends AbstractModel
+class Word extends AbstractModel
 {
     private $id;
     private $name;
 
-    const TABLE_NAME = 'user';
+    const TABLE_NAME = 'word';
 
     public static function migrate()
     {

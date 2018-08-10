@@ -5,7 +5,9 @@ use BaseClasses\DB\DataBaseExecute as DB;
 
 class ConstructQuery extends DB
 {
-    public static function insert($fields, $table)
+    protected $query;
+
+    public function insert($fields, $table)
     {
         $in_to = '';
         $what =  '';
@@ -13,48 +15,53 @@ class ConstructQuery extends DB
             $in_to .= ', '.$key;
             $what .= ', "'.$field.'"';
         }
-        $query = 'INSERT INTO '.$table.'(  ID '.$in_to.')VALUES(0'.$what.');';
-        return $query;
+        $this->query = 'INSERT INTO '.$table.'(  ID '.$in_to.')VALUES(0'.$what.');';
+        return $this;
     }
 
-    public static function showColumns($table)
+    public function showColumns($table)
     {
-        $query = 'show columns from '.$table.';';
-        return $query;
+        $this->query = 'show columns from '.$table.';';
+        return $this;
     }
 
-    public static function select($table)
+    public function select($table)
     {
-        $query = 'select * from '.$table.';';
-        return $query;
+        $this->query = 'select * from '.$table.';';
+        return $this;
     }
 
-    public static function showTables()
+    public function showTables()
     {
-        $query = 'show tables;';
-        return $query;
+        $this->query = 'show tables;';
+        return $this;
     }
 
-    public static function where($query, $field, $value)
+    public function where($field, $value)
     {
-        $query = str_replace(';', '', $query);
+        $this->query = str_replace(';', '', $this->query);
         $j = explode('_', $field);
         $field_spec = end($j);
         if ($field_spec == 'id'){
-            $query = $query . ' where ' . $field . '=' . $value;
+            $this->query .= ' where ' . $field . '=' . $value;
         }else {
-            $query = $query . ' where ' . $field . '="' . $value . '"';
+            $this->query .= ' where ' . $field . '="' . $value . '"';
         }
-        return $query.';';
+        return $this;
     }
 
-    public static function CreateTable($form_name, $form_fields)
+    public function CreateTable($tableName, $tableFields)
     {
         $fields = '';
-        foreach ($form_fields as $key =>$field){
+        foreach ($tableFields as $key => $field){
             $fields .= $field.' varchar(255) DEFAULT NULL,';
         }
-        $query = "CREATE TABLE feedback.form_" . $form_name . " (  ID int(11) NOT NULL AUTO_INCREMENT,  ". $fields ."  PRIMARY KEY (ID));";
-        return $query;
+        $this->query = "CREATE TABLE feedback.form_" . $tableName . " (  ID int(11) NOT NULL AUTO_INCREMENT,  ". $fields ."  PRIMARY KEY (ID));";
+        return $this;
+    }
+
+    public function setPrimaryKey($tableName, $key){
+        $this->query = 'ALTER TABLE ' . $tableName . ' ADD PRIMARY KEY (' . $key . ');';
+        return $this;
     }
 }

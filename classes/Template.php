@@ -58,7 +58,7 @@ Class Template implements ArrayAccess
           echo $temp;
     }
 
-    function PrintArray($field){
+    function printArray($field){
         echo '----------------------';
         echo '<pre>';
         var_dump($field);

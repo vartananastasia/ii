@@ -3,22 +3,26 @@ namespace BaseClasses\DB;
 
 class DataBaseExecute
 {
-    private $connect;
+    private $_connect;
+    protected $query;
 
     public function __construct()
     {
         try {
-            $this->connect = new \PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASSWORD);
+            $this->_connect = new \PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASSWORD);
         } catch (PDOException $e) {
             echo 'Unable to connect: ' . $e->getMessage();
         }
+        $this->query = '';
     }
 
-    public function execute($query)
+    public function execute()
     {
-        $execution = $this->connect->query($query);
-        self::shat($this->connect);
-        return $execution;
+        $execution = $this->_connect->query($this->query);
+        $execution->execute();
+        $result = $execution->fetchAll();
+        self::shat($this->_connect);
+        return $result;
     }
 
     private static function shat(\PDO $db_conn)

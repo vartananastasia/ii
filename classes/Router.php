@@ -17,7 +17,10 @@ Class Router
     {
 
         $path = trim($path, '/\\');
-        $path = DIRSEP . $path . DIRSEP;
+        // ubunta
+//        $path = DIRSEP . $path . DIRSEP;
+        // win
+        $path = $path . DIRSEP;
 
         if (is_dir($path) == false) {
             throw new Exception ('Invalid controller path: `' . $path . '`');
