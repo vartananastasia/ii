@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-10T07:39:09.478Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="nh2trLUd3PntLkbkzDv0" version="16.2.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-10T07:42:26.026Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="XURIIjMtBYAkIFcpIIdA" version="16.2.4" type="github" pages="2">
   <diagram name="Page-1" id="ad52d381-51e7-2e0d-a935-2d0ddd2fd229">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -157,7 +157,7 @@
         <mxCell id="42iXVZKyQg-ZkgAwgZf2-0" />
         <mxCell id="42iXVZKyQg-ZkgAwgZf2-1" parent="42iXVZKyQg-ZkgAwgZf2-0" />
         <mxCell id="U29771Ecz4MOP07TJdpR-19" value="2. Остатки, цены, api" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="42iXVZKyQg-ZkgAwgZf2-1">
-          <mxGeometry x="400" y="610" width="740" height="30" as="geometry" />
+          <mxGeometry x="320" y="490" width="740" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YQZS7FdD5D_KlTmMAMFZ-0" value="&lt;span&gt;askona.kz&lt;br&gt;Б24&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=1;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="42iXVZKyQg-ZkgAwgZf2-1">
           <mxGeometry x="600" y="100" width="210" height="100" as="geometry" />
@@ -192,7 +192,7 @@
         <mxCell id="YQZS7FdD5D_KlTmMAMFZ-8" value="интеграции с платежными шлюзами" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;arcSize=50;" vertex="1" parent="42iXVZKyQg-ZkgAwgZf2-1">
           <mxGeometry x="700" y="10" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="YQZS7FdD5D_KlTmMAMFZ-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="42iXVZKyQg-ZkgAwgZf2-1" source="YQZS7FdD5D_KlTmMAMFZ-0" target="YQZS7FdD5D_KlTmMAMFZ-8">
+        <mxCell id="YQZS7FdD5D_KlTmMAMFZ-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.642;exitY=0.022;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="42iXVZKyQg-ZkgAwgZf2-1" source="YQZS7FdD5D_KlTmMAMFZ-0" target="YQZS7FdD5D_KlTmMAMFZ-8">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="520" y="250" as="sourcePoint" />
             <mxPoint x="570" y="200" as="targetPoint" />
@@ -226,7 +226,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="K_6S44pZKELU0-nZa0NQ-0" value="Api Service" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=1;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="42iXVZKyQg-ZkgAwgZf2-1">
-          <mxGeometry x="360" y="300" width="150" height="130" as="geometry" />
+          <mxGeometry x="400" y="310" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-opgnjT0x0myLm0r0H2q-0" value="остатки&lt;br&gt;цены" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="42iXVZKyQg-ZkgAwgZf2-1" source="YQZS7FdD5D_KlTmMAMFZ-7" target="K_6S44pZKELU0-nZa0NQ-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="310" as="sourcePoint" />
+            <mxPoint x="770" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-opgnjT0x0myLm0r0H2q-1" value="остатки&lt;br&gt;цены" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="42iXVZKyQg-ZkgAwgZf2-1" source="K_6S44pZKELU0-nZa0NQ-0" target="YQZS7FdD5D_KlTmMAMFZ-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="300" as="sourcePoint" />
+            <mxPoint x="770" y="250" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
