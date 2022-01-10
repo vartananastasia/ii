@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-10T11:50:10.621Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="izxlbhkm8yGe_kbYlu3F" version="16.2.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-01-10T11:51:39.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="jg43qT5fF1ptLCDncys-" version="16.2.4" type="github" pages="6">
   <diagram name="0 Этап" id="ad52d381-51e7-2e0d-a935-2d0ddd2fd229">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -856,15 +856,6 @@
         </mxCell>
         <mxCell id="fegMUaTIlVHJb1ADeYnD-6" value="Api Service&lt;br&gt;+ Auth&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=1;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="AiPrarSeB3P3UyyY4pVE-1">
           <mxGeometry x="332" y="460" width="190" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="fegMUaTIlVHJb1ADeYnD-7" value="остатки&lt;br&gt;цены" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="AiPrarSeB3P3UyyY4pVE-1" source="fegMUaTIlVHJb1ADeYnD-19" target="fegMUaTIlVHJb1ADeYnD-6">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="820" as="sourcePoint" />
-            <mxPoint x="942" y="260" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="40" y="650" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="fegMUaTIlVHJb1ADeYnD-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="AiPrarSeB3P3UyyY4pVE-1">
           <mxGeometry x="292" y="190" width="348" height="190" as="geometry" />
