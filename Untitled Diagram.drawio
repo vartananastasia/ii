@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-10T11:51:39.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="jg43qT5fF1ptLCDncys-" version="16.2.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-01-11T09:24:15.993Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="nwH_GzTwzcmdRt8gdIE_" version="16.2.4" type="github" pages="6">
   <diagram name="0 Этап" id="ad52d381-51e7-2e0d-a935-2d0ddd2fd229">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -275,12 +275,6 @@
             <mxPoint x="942" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tX2GuFh5bTft9-v0fIPz-20" value="товары &lt;br&gt;остатки &lt;br&gt;цены" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.663;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="tX2GuFh5bTft9-v0fIPz-1" source="tX2GuFh5bTft9-v0fIPz-18" target="tX2GuFh5bTft9-v0fIPz-7">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="892" y="300" as="sourcePoint" />
-            <mxPoint x="942" y="250" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="tX2GuFh5bTft9-v0fIPz-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tX2GuFh5bTft9-v0fIPz-1">
           <mxGeometry x="292" y="190" width="500" height="190" as="geometry" />
         </mxCell>
@@ -404,6 +398,12 @@
             <mxPoint x="348" y="580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="co554DjUvs5y74tq6aQ3-1" value="товары&lt;br&gt;остатки&lt;br&gt;цены" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1.006;exitY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="tX2GuFh5bTft9-v0fIPz-1" source="tX2GuFh5bTft9-v0fIPz-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="420" as="sourcePoint" />
+            <mxPoint x="780" y="549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -437,12 +437,6 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="892" y="310" as="sourcePoint" />
             <mxPoint x="942" y="260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="EJKidNbe03rWa2PdKPxM-10" value="остатки&lt;br&gt;товары&lt;br&gt;цены&lt;br&gt;Users" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.663;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="EJKidNbe03rWa2PdKPxM-1" source="EJKidNbe03rWa2PdKPxM-8" target="EJKidNbe03rWa2PdKPxM-6">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="892" y="300" as="sourcePoint" />
-            <mxPoint x="942" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="EJKidNbe03rWa2PdKPxM-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EJKidNbe03rWa2PdKPxM-1">
@@ -574,6 +568,12 @@
             <mxPoint x="510" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="dwek0eBmfe-uS651vO8Y-0" value="товары&lt;br&gt;остатки&lt;br&gt;цены&lt;br&gt;&amp;nbsp;Users" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.979;exitY=0.674;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="EJKidNbe03rWa2PdKPxM-1" source="EJKidNbe03rWa2PdKPxM-8" target="EJKidNbe03rWa2PdKPxM-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="530" as="sourcePoint" />
+            <mxPoint x="510" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -610,12 +610,6 @@
             <Array as="points">
               <mxPoint x="40" y="650" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="AEQFn5MXLY9olfDp64xG-8" value="остатки&lt;br&gt;товары&lt;br&gt;цены&lt;br&gt;Users" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.663;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="b-cDMPi7jxLw6nBvApQw-1" source="AEQFn5MXLY9olfDp64xG-6" target="AEQFn5MXLY9olfDp64xG-4">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="892" y="300" as="sourcePoint" />
-            <mxPoint x="942" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AEQFn5MXLY9olfDp64xG-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="b-cDMPi7jxLw6nBvApQw-1">
@@ -828,11 +822,17 @@
             <mxPoint x="520" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="ETzJBxVWOBh1h42ChMJN-0" value="товары&lt;br&gt;остатки&lt;br&gt;цены&lt;br&gt;&amp;nbsp;Users" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="b-cDMPi7jxLw6nBvApQw-1" source="AEQFn5MXLY9olfDp64xG-6" target="AEQFn5MXLY9olfDp64xG-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="518.01" y="567.8399999999999" as="sourcePoint" />
+            <mxPoint x="782" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="-BPME3C2g258T_sQm4xB" name="5 Этап">
-    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1730" dy="965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="AiPrarSeB3P3UyyY4pVE-0" />
         <mxCell id="AiPrarSeB3P3UyyY4pVE-1" parent="AiPrarSeB3P3UyyY4pVE-0" />
