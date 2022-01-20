@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-20T10:36:29.420Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="KjGsUxqnH9OegYviNA0m" version="16.2.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-20T10:49:03.641Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="AVONnaQXZcXYUIZy_ZHA" version="16.2.7" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -208,6 +208,62 @@
             <mxPoint x="370" y="440" as="targetPoint" />
             <Array as="points">
               <mxPoint x="330" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ajUGgGzZbcPvsCThmsmC" name="Page-3">
+    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="EIC93KngTdDV428YHkQv-0" />
+        <mxCell id="EIC93KngTdDV428YHkQv-1" parent="EIC93KngTdDV428YHkQv-0" />
+        <mxCell id="EIC93KngTdDV428YHkQv-2" value="SKU&lt;br&gt;&lt;br&gt;Одеяло 110*140 Angel&lt;br&gt;&lt;br&gt;св-ва:&lt;br&gt;Ширина: 140&lt;br&gt;Длина: 110" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry x="400" y="180" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-4" value="МЦ&lt;br&gt;/Справочники/Группы товаров в&amp;nbsp; Галактика/80010000000003F7/Одеяло 110*140 Angel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry x="90" y="180" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-5" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="310" y="230" as="sourcePoint" />
+            <mxPoint x="380" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-6" value="Категория&lt;br&gt;&lt;br&gt;Одеяла / Askona kids / Angel&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry x="890" y="190" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-7" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="880" y="310" as="sourcePoint" />
+            <mxPoint x="810" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-8" value="SKU&lt;br&gt;&lt;br&gt;Одеяло 205*140 Angel&lt;br&gt;&lt;br&gt;св-ва:&lt;br&gt;Ширина: 140&lt;br&gt;Длина: 205" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry x="400" y="320" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-9" value="МТ&lt;br&gt;&lt;br&gt;Детское одеяло Angel&lt;br&gt;&lt;br&gt;кол-во МЦ: 1&lt;br&gt;св-ва:&lt;br&gt;Гарантия&lt;br&gt;Группа налогов&lt;br&gt;Ширина&lt;br&gt;Длина" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry x="680" y="200" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-12" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="670" y="310" as="sourcePoint" />
+            <mxPoint x="600" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-14" value="МЦ&lt;br&gt;/Справочники/Группы товаров в&amp;nbsp; Галактика/80010000000003F7/Одеяло 205*140 Angel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry x="90" y="350" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EIC93KngTdDV428YHkQv-15" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="EIC93KngTdDV428YHkQv-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="310" y="379.5" as="sourcePoint" />
+            <mxPoint x="380" y="379.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="379.5" />
             </Array>
           </mxGeometry>
         </mxCell>
